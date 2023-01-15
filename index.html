@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>오늘의 시간</title>
+  </head>
+  <body>
+    <h1>오늘의 시간</h1>
+    <input type="button" value="update" onclick="location.reload();">
+    <p id="demo"></p>
+
+<script>
+  const d = new Date();
+  let text = d.toLocaleString();
+  document.getElementById("demo").innerHTML = text;
+</script>
+
+  </body>
+</html>
